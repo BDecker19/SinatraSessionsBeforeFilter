@@ -1,0 +1,22 @@
+<html>
+<head>
+  <title>Hello</title>
+  <link href="css/main.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+  <H1>
+    <%= cool_bananas %> Profile Page
+  </H1>
+
+  <p>
+    The time is <%= Time.now %> 
+  </p>
+
+  <ul>
+    <% for i in 1..10 do %>
+      <li>Value <%= i %></li>
+    <% end %>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<h1>Login</h1>
+
+<%= flash[:notice] %>
+
+<p>Please enter the password to continue...</p>
+
+<form action="/new" method="POST">
+  <label for="password">
+    Password:
+  </label>
+
+  <input type="password" name="password" />
+
+  <input type="submit" />
+</form>

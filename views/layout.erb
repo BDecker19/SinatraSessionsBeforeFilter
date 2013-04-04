@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>My amazing second Sinatra app</title>
+  </head>
+
+  <body>
+    <p>Welcome <%= session[:current_user] %></p>
+    <h1>My amazing second sinatra app</h1>
+
+    <div id="menu" style="float:left;width:200px;height:800px;background:blue">
+      <ul>
+        <li>
+          <a href="/new">Join up!</a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="content">
+      <%= yield %>
+    </div>
+
+  </body>
+</html>
